@@ -1,0 +1,558 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Inada Naoki and GitHub contributors
+# This file is distributed under the same license as the PyMySQL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyMySQL 0.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-18 04:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../modules/connections.rst:2
+msgid "Connection Object"
+msgstr ""
+
+#: of pymysql.connections.Connection:1
+msgid "Representation of a socket with a mysql server."
+msgstr ""
+
+#: of pymysql.connections.Connection:3
+msgid "The proper way to get an instance of this class is to call connect()."
+msgstr ""
+
+#: of pymysql.connections.Connection:6
+msgid "Establish a connection to the MySQL database. Accepts several arguments:"
+msgstr ""
+
+#: of pymysql.connections.Connection pymysql.connections.Connection.cursor
+#: pymysql.connections.Connection.ping pymysql.connections.Connection.select_db
+#: pymysql.cursors.Cursor.callproc pymysql.cursors.Cursor.execute
+#: pymysql.cursors.Cursor.executemany pymysql.cursors.Cursor.mogrify
+msgid "Parameters"
+msgstr ""
+
+#: of pymysql.connections.Connection:9
+msgid "Host where the database server is located."
+msgstr ""
+
+#: of pymysql.connections.Connection:10
+msgid "Username to log in as."
+msgstr ""
+
+#: of pymysql.connections.Connection:11
+msgid "Password to use."
+msgstr ""
+
+#: of pymysql.connections.Connection:12
+msgid "Database to use, None to not use a particular one."
+msgstr ""
+
+#: of pymysql.connections.Connection:13
+msgid "MySQL port to use, default is usually OK. (default: 3306)"
+msgstr ""
+
+#: of pymysql.connections.Connection:14
+msgid ""
+"When the client has multiple network interfaces, specify the interface "
+"from which to connect to the host. Argument can be a hostname or an IP "
+"address."
+msgstr ""
+
+#: of pymysql.connections.Connection:17
+msgid "Use a unix socket rather than TCP/IP."
+msgstr ""
+
+#: of pymysql.connections.Connection:18
+msgid ""
+"The timeout for reading from the connection in seconds. (default: None - "
+"no timeout)"
+msgstr ""
+
+#: of pymysql.connections.Connection:20
+msgid ""
+"The timeout for writing to the connection in seconds. (default: None - no"
+" timeout)"
+msgstr ""
+
+#: of pymysql.connections.Connection:22
+msgid "Charset to use."
+msgstr ""
+
+#: of pymysql.connections.Connection:23
+msgid "Collation name to use."
+msgstr ""
+
+#: of pymysql.connections.Connection:24
+msgid "Default SQL_MODE to use."
+msgstr ""
+
+#: of pymysql.connections.Connection:25
+msgid ""
+"Specifies  my.cnf file to read these parameters from under the [client] "
+"section."
+msgstr ""
+
+#: of pymysql.connections.Connection:27
+msgid ""
+"Conversion dictionary to use instead of the default one. This is used to "
+"provide custom marshalling and unmarshalling of types. See converters."
+msgstr ""
+
+#: of pymysql.connections.Connection:31
+msgid ""
+"Whether or not to default to unicode strings. This option defaults to "
+"true."
+msgstr ""
+
+#: of pymysql.connections.Connection:34
+msgid "Custom flags to send to MySQL. Find potential values in constants.CLIENT."
+msgstr ""
+
+#: of pymysql.connections.Connection:35
+msgid "Custom cursor class to use."
+msgstr ""
+
+#: of pymysql.connections.Connection:36
+msgid "Initial SQL statement to run when connection is established."
+msgstr ""
+
+#: of pymysql.connections.Connection:37
+msgid ""
+"The timeout for connecting to the database in seconds. (default: 10, min:"
+" 1, max: 31536000)"
+msgstr ""
+
+#: of pymysql.connections.Connection:39
+msgid ""
+"A dict of arguments similar to mysql_ssl_set()'s parameters or an "
+"ssl.SSLContext."
+msgstr ""
+
+#: of pymysql.connections.Connection:40
+msgid "Path to the file that contains a PEM-formatted CA certificate."
+msgstr ""
+
+#: of pymysql.connections.Connection:41
+msgid "Path to the file that contains a PEM-formatted client certificate."
+msgstr ""
+
+#: of pymysql.connections.Connection:42
+msgid "A boolean value that disables usage of TLS."
+msgstr ""
+
+#: of pymysql.connections.Connection:43
+msgid ""
+"Path to the file that contains a PEM-formatted private key for the client"
+" certificate."
+msgstr ""
+
+#: of pymysql.connections.Connection:45
+msgid "The password for the client certificate private key."
+msgstr ""
+
+#: of pymysql.connections.Connection:46
+msgid "Set to true to check the server certificate's validity."
+msgstr ""
+
+#: of pymysql.connections.Connection:47
+msgid "Set to true to check the server's identity."
+msgstr ""
+
+#: of pymysql.connections.Connection:48
+msgid "Group to read from in the configuration file."
+msgstr ""
+
+#: of pymysql.connections.Connection:49
+msgid "Autocommit mode. None means use server default. (default: False)"
+msgstr ""
+
+#: of pymysql.connections.Connection:50
+msgid "Boolean to enable the use of LOAD DATA LOCAL command. (default: False)"
+msgstr ""
+
+#: of pymysql.connections.Connection:51
+msgid ""
+"Max size of packet sent to server in bytes. (default: 16MB) Only used to "
+"limit size of \"LOAD LOCAL INFILE\" data packet smaller than default "
+"(16KB)."
+msgstr ""
+
+#: of pymysql.connections.Connection:53
+msgid ""
+"Don't explicitly connect on construction - wait for connect call. "
+"(default: False)"
+msgstr ""
+
+#: of pymysql.connections.Connection:55
+msgid ""
+"A dict of plugin names to a class that processes that plugin. The class "
+"will take the Connection object as the argument to the constructor. The "
+"class needs an authenticate method taking an authentication packet as an "
+"argument.  For the dialog plugin, a prompt(echo, prompt) method can be "
+"used (if no authenticate method) for returning a string from the user. "
+"(experimental)"
+msgstr ""
+
+#: of pymysql.connections.Connection:60
+msgid "SHA256 authentication plugin public key value. (default: None)"
+msgstr ""
+
+#: of pymysql.connections.Connection:61
+msgid "Add _binary prefix on bytes and bytearray. (default: False)"
+msgstr ""
+
+#: of pymysql.connections.Connection:62 pymysql.connections.Connection:63
+msgid "Not supported."
+msgstr ""
+
+#: of pymysql.connections.Connection:64
+msgid "**DEPRECATED** Alias for database."
+msgstr ""
+
+#: of pymysql.connections.Connection:65
+msgid "**DEPRECATED** Alias for password."
+msgstr ""
+
+#: of pymysql.connections.Connection:67
+msgid ""
+"See `Connection <https://www.python.org/dev/peps/pep-0249/#connection-"
+"objects>`_ in the specification."
+msgstr ""
+
+#: of pymysql.connections.Connection.begin:1
+msgid "Begin transaction."
+msgstr ""
+
+#: of pymysql.connections.Connection.close:1
+msgid "Send the quit message and close the socket."
+msgstr ""
+
+#: of pymysql.connections.Connection.close:3
+msgid ""
+"See `Connection.close() "
+"<https://www.python.org/dev/peps/pep-0249/#Connection.close>`_ in the "
+"specification."
+msgstr ""
+
+#: of pymysql.connections.Connection.close pymysql.connections.Connection.ping
+msgid "Raises"
+msgstr ""
+
+#: of pymysql.connections.Connection.close:6
+msgid "If the connection is already closed."
+msgstr ""
+
+#: of pymysql.connections.Connection.commit:1
+msgid "Commit changes to stable storage."
+msgstr ""
+
+#: of pymysql.connections.Connection.commit:3
+msgid ""
+"See `Connection.commit() "
+"<https://www.python.org/dev/peps/pep-0249/#commit>`_ in the "
+"specification."
+msgstr ""
+
+#: of pymysql.connections.Connection.cursor:1
+msgid "Create a new cursor to execute queries with."
+msgstr ""
+
+#: of pymysql.connections.Connection.cursor:3
+msgid "The type of cursor to create. None means use Cursor."
+msgstr ""
+
+#: of pymysql.connections.Connection.open:1
+msgid "Return True if the connection is open."
+msgstr ""
+
+#: of pymysql.connections.Connection.ping:1
+msgid "Check if the server is alive."
+msgstr ""
+
+#: of pymysql.connections.Connection.ping:3
+msgid "If the connection is closed, reconnect."
+msgstr ""
+
+#: of pymysql.connections.Connection.ping:6
+msgid "If the connection is closed and reconnect=False."
+msgstr ""
+
+#: of pymysql.connections.Connection.rollback:1
+msgid "Roll back the current transaction."
+msgstr ""
+
+#: of pymysql.connections.Connection.rollback:3
+msgid ""
+"See `Connection.rollback() "
+"<https://www.python.org/dev/peps/pep-0249/#rollback>`_ in the "
+"specification."
+msgstr ""
+
+#: of pymysql.connections.Connection.select_db:1
+msgid "Set current db."
+msgstr ""
+
+#: of pymysql.connections.Connection.select_db:3
+msgid "The name of the db."
+msgstr ""
+
+#: of pymysql.connections.Connection.set_character_set:1
+msgid "Set charaset (and collation)"
+msgstr ""
+
+#: of pymysql.connections.Connection.set_character_set:3
+msgid ""
+"Send \"SET NAMES charset [COLLATE collation]\" query. Update "
+"Connection.encoding based on charset."
+msgstr ""
+
+#: of pymysql.connections.Connection.set_charset:1
+msgid "Deprecated. Use set_character_set() instead."
+msgstr ""
+
+#: of pymysql.connections.Connection.show_warnings:1
+msgid "Send the \"SHOW WARNINGS\" SQL command."
+msgstr ""
+
+#: ../../modules/cursors.rst:2
+msgid "Cursor Objects"
+msgstr ""
+
+#: of pymysql.cursors.Cursor:1
+msgid "This is the object used to interact with the database."
+msgstr ""
+
+#: of pymysql.cursors.Cursor:3
+msgid ""
+"Do not create an instance of a Cursor yourself. Call "
+"connections.Connection.cursor()."
+msgstr ""
+
+#: of pymysql.cursors.Cursor:6
+msgid ""
+"See `Cursor <https://www.python.org/dev/peps/pep-0249/#cursor-objects>`_ "
+"in the specification."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.callproc:1
+msgid "Execute stored procedure procname with args."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.callproc:3
+msgid "Name of procedure to execute on server."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.callproc:6
+msgid "Sequence of parameters to use with procedure."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.callproc:9
+msgid "Returns the original args."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.callproc:11
+msgid ""
+"Compatibility warning: PEP-249 specifies that any modified parameters "
+"must be returned. This is currently impossible as they are only available"
+" by storing them in a server variable and then retrieved by a query. "
+"Since stored procedures return zero or more result sets, there is no "
+"reliable way to get at OUT or INOUT parameters via callproc. The server "
+"variables are named @_procname_n, where procname is the parameter above "
+"and n is the position of the parameter (from zero). Once all result sets "
+"generated by the procedure have been fetched, you can issue a SELECT "
+"@_procname_0, ... query using .execute() to get any OUT or INOUT values."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.callproc:23
+msgid ""
+"Compatibility warning: The act of calling a stored procedure itself "
+"creates an empty result set. This appears after any result sets generated"
+" by the procedure. This is non-standard behavior with respect to the DB-"
+"API. Be sure to use nextset() to advance through all result sets; "
+"otherwise you may get disconnected."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.close:1 pymysql.cursors.SSCursor.close:1
+msgid "Closing a cursor just exhausts all remaining data."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.execute:1
+msgid "Execute a query."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.execute:3 pymysql.cursors.Cursor.executemany:3
+msgid "Query to execute."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.execute:6 pymysql.cursors.Cursor.mogrify:7
+msgid "Parameters used with query. (optional)"
+msgstr ""
+
+#: of pymysql.cursors.Cursor.execute pymysql.cursors.Cursor.executemany
+#: pymysql.cursors.Cursor.mogrify
+msgid "Returns"
+msgstr ""
+
+#: of pymysql.cursors.Cursor.execute:9
+msgid "Number of affected rows."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.execute pymysql.cursors.Cursor.executemany
+#: pymysql.cursors.Cursor.mogrify
+msgid "Return type"
+msgstr ""
+
+#: of pymysql.cursors.Cursor.execute:12
+#, python-format
+msgid ""
+"If args is a list or tuple, %s can be used as a placeholder in the query."
+" If args is a dict, %(name)s can be used as a placeholder in the query."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.executemany:1
+msgid "Run several data against one query."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.executemany:6
+msgid "Sequence of sequences or mappings. It is used as parameter."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.executemany:9
+msgid "Number of rows affected, if any."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.executemany:12
+msgid ""
+"This method improves performance on multiple-row INSERT and REPLACE. "
+"Otherwise it is equivalent to looping over args with execute()."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.fetchall:1
+msgid "Fetch all the rows."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.fetchmany:1
+msgid "Fetch several rows."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.fetchone:1
+msgid "Fetch the next row."
+msgstr ""
+
+#: ../../docstring of pymysql.cursors.Cursor.max_stmt_length:1
+msgid "Max statement size which :meth:`executemany` generates."
+msgstr ""
+
+#: ../../docstring of pymysql.cursors.Cursor.max_stmt_length:3
+msgid ""
+"Max size of allowed statement is max_allowed_packet - packet_header_size."
+" Default value of max_allowed_packet is 1048576."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.mogrify:1
+msgid ""
+"Returns the exact string that would be sent to the database by calling "
+"the execute() method."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.mogrify:4
+msgid "Query to mogrify."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.mogrify:10
+msgid "The query with argument binding applied."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.mogrify:13
+msgid "This method follows the extension to the DB API 2.0 followed by Psycopg."
+msgstr ""
+
+#: of pymysql.cursors.Cursor.setinputsizes:1
+#: pymysql.cursors.Cursor.setoutputsizes:1
+msgid "Does nothing, required by DB API."
+msgstr ""
+
+#: of pymysql.cursors.SSCursor:1
+msgid ""
+"Unbuffered Cursor, mainly useful for queries that return a lot of data, "
+"or for connections to remote servers over a slow network."
+msgstr ""
+
+#: of pymysql.cursors.SSCursor:4
+msgid ""
+"Instead of copying every row of data into a buffer, this will fetch rows "
+"as needed. The upside of this is the client uses much less memory, and "
+"rows are returned much faster when traveling over a slow network or if "
+"the result set is very big."
+msgstr ""
+
+#: of pymysql.cursors.SSCursor:9
+msgid ""
+"There are limitations, though. The MySQL protocol doesn't support "
+"returning the total number of rows, so the only way to tell how many rows"
+" there are is to iterate over every row returned. Also, it currently "
+"isn't possible to scroll backwards, as only the current row is held in "
+"memory."
+msgstr ""
+
+#: of pymysql.cursors.SSCursor.fetchall:1
+msgid ""
+"Fetch all, as per MySQLdb. Pretty useless for large queries, as it is "
+"buffered. See fetchall_unbuffered(), if you want an unbuffered generator "
+"version of this method."
+msgstr ""
+
+#: of pymysql.cursors.SSCursor.fetchall_unbuffered:1
+msgid ""
+"Fetch all, implemented as a generator, which isn't to standard, however, "
+"it doesn't make sense to return everything in a list, as that would use "
+"ridiculous memory for large result sets."
+msgstr ""
+
+#: of pymysql.cursors.SSCursor.fetchmany:1
+msgid "Fetch many."
+msgstr ""
+
+#: of pymysql.cursors.SSCursor.fetchone:1
+msgid "Fetch next row."
+msgstr ""
+
+#: of pymysql.cursors.SSCursor.read_next:1
+msgid "Read next row."
+msgstr ""
+
+#: of pymysql.cursors.DictCursor:1
+msgid "A cursor which returns results as a dictionary"
+msgstr ""
+
+#: of pymysql.cursors.SSDictCursor:1
+msgid "An unbuffered cursor, which returns results as a dictionary"
+msgstr ""
+
+#: ../../modules/index.rst:2
+msgid "API Reference"
+msgstr ""
+
+#: ../../modules/index.rst:4
+msgid ""
+"If you are looking for information on a specific function, class or "
+"method, this part of the documentation is for you."
+msgstr ""
+
+#: ../../modules/index.rst:7
+msgid ""
+"For more information, please read the `Python Database API specification "
+"<https://www.python.org/dev/peps/pep-0249>`_."
+msgstr ""
+

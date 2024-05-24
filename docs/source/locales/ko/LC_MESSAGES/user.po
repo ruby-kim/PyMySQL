@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Inada Naoki and GitHub contributors
+# This file is distributed under the same license as the PyMySQL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyMySQL 0.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-18 04:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../user/development.rst:5
+msgid "Development"
+msgstr ""
+
+#: ../../user/development.rst:7
+msgid "You can help developing PyMySQL by `contributing on GitHub`_."
+msgstr ""
+
+#: ../../user/development.rst:12
+msgid "Building the documentation"
+msgstr ""
+
+#: ../../user/development.rst:14
+msgid "Go to the ``docs`` directory and run ``make html``."
+msgstr ""
+
+#: ../../user/development.rst:18
+msgid "Test Suite"
+msgstr ""
+
+#: ../../user/development.rst:20
+msgid ""
+"If you would like to run the test suite, create a database for testing "
+"like this::"
+msgstr ""
+
+#: ../../user/development.rst:25
+msgid ""
+"Then, copy the file ``ci/database.json`` to "
+"``pymysql/tests/databases.json`` and edit the new file to match your "
+"MySQL configuration::"
+msgstr ""
+
+#: ../../user/development.rst:31
+msgid "To run all the tests, execute the script ``runtests.py``::"
+msgstr ""
+
+#: ../../user/examples.rst:5
+msgid "Examples"
+msgstr ""
+
+#: ../../user/examples.rst:10
+msgid "CRUD"
+msgstr ""
+
+#: ../../user/examples.rst:12
+msgid "The following examples make use of a simple table"
+msgstr ""
+
+#: ../../user/examples.rst:55
+msgid "This example will print:"
+msgstr ""
+
+#: ../../user/index.rst:2
+msgid "User Guide"
+msgstr ""
+
+#: ../../user/index.rst:4
+msgid ""
+"The PyMySQL user guide explains how to install PyMySQL and how to "
+"contribute to the library as a developer."
+msgstr ""
+
+#: ../../user/installation.rst:5
+msgid "Installation"
+msgstr ""
+
+#: ../../user/installation.rst:7
+msgid ""
+"The last stable release is available on PyPI and can be installed with "
+"``pip``::"
+msgstr ""
+
+#: ../../user/installation.rst:11
+msgid ""
+"To use \"sha256_password\" or \"caching_sha2_password\" for authenticate,"
+" you need to install additional dependency::"
+msgstr ""
+
+#: ../../user/installation.rst:17
+msgid "Requirements"
+msgstr ""
+
+#: ../../user/installation.rst:19
+msgid "Python -- one of the following:"
+msgstr ""
+
+#: ../../user/installation.rst:21
+msgid "CPython_ >= 3.7"
+msgstr ""
+
+#: ../../user/installation.rst:22
+msgid "Latest PyPy_ 3"
+msgstr ""
+
+#: ../../user/installation.rst:24
+msgid "MySQL Server -- one of the following:"
+msgstr ""
+
+#: ../../user/installation.rst:26
+msgid "MySQL_ >= 5.7"
+msgstr ""
+
+#: ../../user/installation.rst:27
+msgid "MariaDB_ >= 10.3"
+msgstr ""
+
+#: ../../user/resources.rst:5
+msgid "Resources"
+msgstr ""
+
+#: ../../user/resources.rst:7
+msgid "DB-API 2.0: http://www.python.org/dev/peps/pep-0249"
+msgstr ""
+
+#: ../../user/resources.rst:9
+msgid "MySQL Reference Manuals: http://dev.mysql.com/doc/"
+msgstr ""
+
+#: ../../user/resources.rst:11
+msgid ""
+"MySQL client/server protocol: http://dev.mysql.com/doc/internals/en"
+"/client-server-protocol.html"
+msgstr ""
+
+#: ../../user/resources.rst:14
+msgid ""
+"PyMySQL mailing list: https://groups.google.com/forum/#!forum/pymysql-"
+"users"
+msgstr ""
+
